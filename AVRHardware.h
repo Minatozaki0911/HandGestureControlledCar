@@ -4,9 +4,7 @@
 #include <stdint.h> 
 #include "atmega328p.h"
 #include "avr/pgmspace.h"
-//#include "/Code/Arduino project/arduino-nightly/hardware/tools/avr/avr/include/avr/pgmspace.h"
-//#include "/Code/Arduino project/arduino-nightly/hardware/tools/avr/avr/include/avr/interrupt.h"
-
+#define _BV(bit) (1<<(bit))
 
 //All of this will be stored in Flash memory so don't worry about your petty 2KB of RAM
 #define F_CPU 16000000L //As specified in board.txt config
